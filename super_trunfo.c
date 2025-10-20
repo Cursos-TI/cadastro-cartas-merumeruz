@@ -26,7 +26,7 @@ int main(){
     fgets(cidade1, 50, stdin); //lê uma linha com espaços
     cidade1[strcspn(cidade1, "\r\n")] = '\0'; //remove o '\n' do final da string
     printf("Digite a população da cidade:");
-    scanf("%d", &populacao1); 
+    scanf("%lu", &populacao1); 
     printf("Digite a área da cidade (em km²):");
     scanf("%f", &area1);
     printf("Digite o PIB da cidade (em bilhões):");
@@ -62,7 +62,7 @@ int main(){
     fgets(cidade2, 50, stdin); //lê uma linha com espaços
     cidade2[strcspn(cidade2, "\r\n")] = '\0'; //remove o '\n' do final da string
     printf("Digite a população da cidade:");
-    scanf("%d", &populacao2); 
+    scanf("%lu", &populacao2); 
     printf("Digite a área da cidade (em km²):");
     scanf("%f", &area2);
     printf("Digite o PIB da cidade (em bilhões):");
@@ -104,4 +104,5 @@ int main(){
     printf("Super Poder: Carta %d venceu (%d)\n", (SuperPoder1 > SuperPoder2) ? 1 : 2, SuperPoder1 > SuperPoder2);
 
     return 0;
+
 }
